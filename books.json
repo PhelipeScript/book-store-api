@@ -1,0 +1,182 @@
+[
+  {
+    "Id": "1",
+    "Title": "The Silent Patient",
+    "Description": "A psychological thriller with a shocking twist.",
+    "Author": "Alex Michaelides",
+    "Genre": "Thriller",
+    "Value": 19.99,
+    "Quantity": 12
+  },
+  {
+    "Id": "2",
+    "Title": "Educated",
+    "Description": "A memoir about growing up in a survivalist family.",
+    "Author": "Tara Westover",
+    "Genre": "Biography",
+    "Value": 14.50,
+    "Quantity": 8
+  },
+  {
+    "Id": "3",
+    "Title": "Dune",
+    "Description": "A sci-fi epic set on a desert planet.",
+    "Author": "Frank Herbert",
+    "Genre": "Science Fiction",
+    "Value": 22.00,
+    "Quantity": 5
+  },
+  {
+    "Id": "4",
+    "Title": "Pride and Prejudice",
+    "Description": "A classic romantic novel set in 19th century England.",
+    "Author": "Jane Austen",
+    "Genre": "Romance",
+    "Value": 11.99,
+    "Quantity": 15
+  },
+  {
+    "Id": "5",
+    "Title": "Sapiens",
+    "Description": "A brief history of humankind.",
+    "Author": "Yuval Noah Harari",
+    "Genre": "Non-fiction",
+    "Value": 25.00,
+    "Quantity": 10
+  },
+  {
+    "Id": "6",
+    "Title": "1984",
+    "Description": "A dystopian novel about totalitarianism.",
+    "Author": "George Orwell",
+    "Genre": "Fiction",
+    "Value": 9.99,
+    "Quantity": 20
+  },
+  {
+    "Id": "7",
+    "Title": "Becoming",
+    "Description": "Memoir of former First Lady Michelle Obama.",
+    "Author": "Michelle Obama",
+    "Genre": "Biography",
+    "Value": 18.99,
+    "Quantity": 9
+  },
+  {
+    "Id": "8",
+    "Title": "The Hobbit",
+    "Description": "A fantasy adventure preceding The Lord of the Rings.",
+    "Author": "J.R.R. Tolkien",
+    "Genre": "Fantasy",
+    "Value": 15.99,
+    "Quantity": 14
+  },
+  {
+    "Id": "9",
+    "Title": "Atomic Habits",
+    "Description": "How small habits lead to big changes.",
+    "Author": "James Clear",
+    "Genre": "Self-help",
+    "Value": 16.00,
+    "Quantity": 13
+  },
+  {
+    "Id": "10",
+    "Title": "The Catcher in the Rye",
+    "Description": "A teenager's critique of the adult world.",
+    "Author": "J.D. Salinger",
+    "Genre": "Fiction",
+    "Value": 12.00,
+    "Quantity": 11
+  },
+  {
+    "Id": "11",
+    "Title": "To Kill a Mockingbird",
+    "Description": "A novel about racial injustice in the Deep South.",
+    "Author": "Harper Lee",
+    "Genre": "Drama",
+    "Value": 10.50,
+    "Quantity": 10
+  },
+  {
+    "Id": "12",
+    "Title": "The Alchemist",
+    "Description": "A young shepherd's journey to find his destiny.",
+    "Author": "Paulo Coelho",
+    "Genre": "Fiction",
+    "Value": 13.99,
+    "Quantity": 18
+  },
+  {
+    "Id": "13",
+    "Title": "The Subtle Art of Not Giving a F*ck",
+    "Description": "A counterintuitive approach to living a good life.",
+    "Author": "Mark Manson",
+    "Genre": "Self-help",
+    "Value": 17.99,
+    "Quantity": 7
+  },
+  {
+    "Id": "14",
+    "Title": "It",
+    "Description": "A horror novel about a shape-shifting monster.",
+    "Author": "Stephen King",
+    "Genre": "Horror",
+    "Value": 21.00,
+    "Quantity": 4
+  },
+  {
+    "Id": "15",
+    "Title": "The Martian",
+    "Description": "An astronaut is stranded on Mars and must survive.",
+    "Author": "Andy Weir",
+    "Genre": "Science Fiction",
+    "Value": 19.50,
+    "Quantity": 6
+  },
+  {
+    "Id": "16",
+    "Title": "Little Women",
+    "Description": "A coming-of-age story of four sisters.",
+    "Author": "Louisa May Alcott",
+    "Genre": "Fiction",
+    "Value": 9.50,
+    "Quantity": 13
+  },
+  {
+    "Id": "17",
+    "Title": "The Girl on the Train",
+    "Description": "A thriller about a woman who sees something shocking from a train.",
+    "Author": "Paula Hawkins",
+    "Genre": "Mystery",
+    "Value": 13.00,
+    "Quantity": 9
+  },
+  {
+    "Id": "18",
+    "Title": "Gone Girl",
+    "Description": "A psychological thriller about a missing wife.",
+    "Author": "Gillian Flynn",
+    "Genre": "Thriller",
+    "Value": 14.00,
+    "Quantity": 8
+  },
+  {
+    "Id": "19",
+    "Title": "The Power of Now",
+    "Description": "A guide to spiritual enlightenment.",
+    "Author": "Eckhart Tolle",
+    "Genre": "Philosophy",
+    "Value": 15.00,
+    "Quantity": 10
+  },
+  {
+    "Id": "20",
+    "Title": "Crime and Punishment",
+    "Description": "A philosophical novel about guilt and redemption.",
+    "Author": "Fyodor Dostoevsky",
+    "Genre": "Classic",
+    "Value": 12.99,
+    "Quantity": 6
+  }
+]
