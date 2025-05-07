@@ -30,6 +30,15 @@ public class BookRepository : IBookRespository
         _books.Add(book);
     }
 
+    public void Update(Book book)
+    {
+        int index = _books.FindIndex(b => b.Id == book.Id);
+        if (index != -1) 
+        {
+            _books[index] = book;
+        }
+    }
+
     public void Delete(string id)
     {
         List<Book> booksWithoutTheDeletedOne = _books.FindAll(book => book.Id != id);

@@ -7,5 +7,6 @@ public interface IBookRespository
     List<Book> Fetch();
     Book? Get(string id);
     void Add(Book book);
+    void Update(Book book);
     void Delete(string id);
 }

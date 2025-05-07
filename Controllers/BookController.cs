@@ -60,6 +60,28 @@ public class BookController : BookStoreAPIBASEController
         return Created("", bookId);
     }
 
+    [HttpPut()]
+    [Route("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public IActionResult Update([FromRoute]string id, [FromBody]UpdateBookDTO bookDto)
+    {
+        Book? existingBook = _bookRespository.Get(id);
+
+        if (existingBook == null) { return NotFound(); }
+
+        existingBook.Title = bookDto.Title;
+        existingBook.Description = bookDto.Description;
+        existingBook.Genre = bookDto.Genre;
+        existingBook.Author = bookDto.Author;
+        existingBook.Quantity = bookDto.Quantity;
+        existingBook.Value = bookDto.Value;
+
+        _bookRespository.Update(existingBook);
+
+        return Ok();
+    }
+
     [HttpDelete()]
     [Route("{id}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
