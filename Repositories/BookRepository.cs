@@ -24,4 +24,11 @@ public class BookRepository : IBookRespository
         Book? book = _books.Find(book => book.Id.Equals(id));
         return book;
     }
+
+    public void Delete(string id)
+    {
+        List<Book> booksWithoutTheDeletedOne = _books.FindAll(book => book.Id != id);
+
+        _books = booksWithoutTheDeletedOne;
+    }
 }

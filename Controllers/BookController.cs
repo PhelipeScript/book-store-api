@@ -37,4 +37,13 @@ public class BookController : BookStoreAPIBASEController
 
         return Ok(book);
     }
+
+    [HttpDelete()]
+    [Route("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    public IActionResult Delete([FromRoute]string id)
+    {
+        _bookRespository.Delete(id);
+        return Ok();
+    }
 }
