@@ -18,4 +18,10 @@ public class BookRepository : IBookRespository
     {
         return _books;
     }
+
+    public Book? Get(string id)
+    {
+        Book? book = _books.Find(book => book.Id.Equals(id));
+        return book;
+    }
 }

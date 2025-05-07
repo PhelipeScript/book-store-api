@@ -13,12 +13,28 @@ public class BookController : BookStoreAPIBASEController
         _bookRespository = bookRespository;
     }
 
-    [HttpGet("fetch")]
+    [HttpGet()]
     [ProducesResponseType(typeof(List<Book>), StatusCodes.Status200OK)]
     public IActionResult Fetch()
     {
         var books = _bookRespository.Fetch();
 
         return Ok(books);
+    }
+
+    [HttpGet()]
+    [Route("{id}")]
+    [ProducesResponseType(typeof(Book), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public IActionResult Get([FromRoute]string id)
+    {
+        Book? book = _bookRespository.Get(id);
+
+        if (book == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(book);
     }
 }
