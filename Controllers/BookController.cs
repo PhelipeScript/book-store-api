@@ -1,4 +1,5 @@
-﻿using BookStoreAPI.Entities;
+﻿using BookStoreAPI.DTOs;
+using BookStoreAPI.Entities;
 using BookStoreAPI.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -36,6 +37,27 @@ public class BookController : BookStoreAPIBASEController
         }
 
         return Ok(book);
+    }
+
+    [HttpPost("create")]
+    [ProducesResponseType(typeof(string), StatusCodes.Status201Created)]
+    public IActionResult Create([FromBody]CreateBookDTO bookDto)
+    {
+        string bookId = Guid.NewGuid().ToString();
+        Book newBook = new Book()
+        {
+            Id = bookId,
+            Title = bookDto.Title,
+            Description = bookDto.Description,
+            Genre = bookDto.Genre,
+            Author = bookDto.Author,
+            Quantity = bookDto.Quantity,
+            Value = bookDto.Value
+        };
+
+        _bookRespository.Add(newBook);
+
+        return Created("", bookId);
     }
 
     [HttpDelete()]

@@ -25,6 +25,11 @@ public class BookRepository : IBookRespository
         return book;
     }
 
+    public void Add(Book book)
+    {
+        _books.Add(book);
+    }
+
     public void Delete(string id)
     {
         List<Book> booksWithoutTheDeletedOne = _books.FindAll(book => book.Id != id);
